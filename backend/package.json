@@ -33,6 +33,7 @@
     "lint": "mwts check",
     "lint:fix": "mwts fix",
     "ci": "npm run cov",
+    "bundle": "bundle && npm run build",
     "build": "mwtsc --cleanOutDir"
   },
   "repository": {
