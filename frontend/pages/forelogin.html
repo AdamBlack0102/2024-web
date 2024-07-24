@@ -7,20 +7,64 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        html {
+        html, body {
             height: 100%;
         }
         .container {
+            display: flex;
             height: 100%;
-            background: radial-gradient(circle, #183f5b, #245170);
         }
         .left_introduction_wrapper {
-
+            flex: 1;
+            background: #1d3f64;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #e7eaf5;
+            margin: 0 0;
+        }
+        .right_introduction_wrapper {
+            flex: 3;
+            background: #3e5a87;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #e7eaf5;
+        }
+        .right_introduction_wrapper p:first-child {
+            margin-bottom: 50px;
+        }
+        .left_introduction_wrapper p:first-child {
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 36px;
+        }
+        a {
+            font-size: 24px;
+            text-decoration-line: underline;
+            color: #a3a9cf;
+            font-weight: bold;
+        }
+        .large_font {
+            font-size: 78px;
         }
     </style>
 </head>
 <body>
-
+<div class="container">
+    <div class="left_introduction_wrapper">
+        <p>主页</p>
+        <p>简介</p>
+    </div>
+    <div class="right_introduction_wrapper">
+        <p class="large_font">Hi, 欢迎来到xxx</p>
+        <a href="#">click here to sign in</a>
+    </div>
+</div>
 </body>
 </html>
